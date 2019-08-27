@@ -1,0 +1,1 @@
+package com.cd.delicate.core.domain;

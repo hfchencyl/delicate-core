@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: delicate-core
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: configServer
+      profile: dev
+      name: test
+      label: master
+  profiles:
+    active: dev
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
